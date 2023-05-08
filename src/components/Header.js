@@ -13,11 +13,11 @@ export default function Header() {
 
     return (
         <header className="flex items-center justify-between font-bold m-4">
-            <p className="z-[999]">LOGO</p>
+            <p className="z-[999]">Designo</p>
             <button
                 aria-label="Menu"
                 onClick={handleMenu}
-                className="group lg:hidden bg-gray-100 p-2.5 transition-colors duration-200 z-[999] rounded-lg"
+                className="group bg-gray-100 p-2.5 transition-colors duration-200 z-[999] rounded-lg"
             >
                 <div
                     className={
