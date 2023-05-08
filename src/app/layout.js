@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="pl">
             <head>
-                <link rel="shortcut icon" href="/favicon.ico"></link>
+                <link rel="shortcut icon" href="/icon.png"></link>
             </head>
             <body className={inter.className}>
                 <Header />
