@@ -6,15 +6,15 @@ import Link from "next/link";
 export default function Header() {
     const iconColor = "#5a5962";
     const menuBtnShowClose =
-        "flex flex-col absolute right-0 top-0 h-screen w-4/5 md:w-1/2 bg-gray-200 lg:bg-transparent justify-center items-center translate-transform duration-200 lg:w-auto lg:h-auto lg:static lg:flex lg:flex-row lg:items-center lg:justify-between lg:space-x-5";
+        "flex flex-col fixed right-0 top-0 h-screen w-4/5 md:w-1/2 bg-gray-200 lg:bg-transparent justify-center items-center translate-transform duration-200 lg:w-auto lg:h-auto lg:static lg:flex lg:flex-row lg:items-center lg:justify-between lg:space-x-5";
 
     const [showMenu, setMenu] = useState(false);
     const closeMenu = () => setMenu(false);
     const handleMenu = () => setMenu(!showMenu);
 
     return (
-        <header className="bg-white text-gray-900 overflow-hidden z-50">
-            <div className=" flex max-w-screen-2xl mx-auto items-center justify-between px-3 sm:px-10 py-4 w-full z-50">
+        <header className="bg-white relative overflow-hidden text-gray-900  z-50">
+            <div className=" flex max-w-screen-2xl mx-auto items-center justify-between px-3 sm:px-10 py-4 overflow-hidden w-full z-50">
                 <Link
                     href="/"
                     className=" hover:bg-transparent tracking-wide text-lg sm:text-2xl font-bold"
@@ -30,7 +30,7 @@ export default function Header() {
                 />
                 <Link
                     href="570037077"
-                    className="mx-5 px-5 mr-5 font-semibold text-[12px] text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-3xl border-emerald-500 flex items-center justify-center"
+                    className="mx-5 px-5 mr-5 font-semibold text-[12px] md:text-sm text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-3xl border-emerald-500 flex items-center justify-center"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,11 @@ export default function Header() {
                 <button
                     aria-label="Menu"
                     onClick={handleMenu}
-                    className="group lg:hidden bg-gray-100 p-2.5 transition-colors duration-200 z-50 rounded-lg"
+                    className={
+                        showMenu
+                            ? "fixed right-3 sm:right-10 group lg:hidden bg-gray-100 p-2.5 transition-colors duration-200 z-50 rounded-lg"
+                            : "right-6 group lg:hidden bg-gray-100 p-2.5 transition-colors duration-200 z-50 rounded-lg"
+                    }
                 >
                     <div
                         style={{ background: iconColor }}
@@ -161,13 +165,23 @@ export default function Header() {
                     </Link>
                 </div>
             </div>
-                    <div className=" lg:flex font-bold uppercase max-w-screen-xl mx-auto hidden items-start justify-around">
-                        <Link className="px-7 py-4" href="/">meble</Link>
-                        <Link className="px-7 py-4 bg-amber-400" href="/">promocje</Link>
-                        <Link className="px-7 py-4" href="/">od ręki</Link>
-                        <Link className="px-7 py-4" href="/">meble</Link>
-                        <Link className="px-7 py-4" href="/">kontakt</Link>
-                    </div>
+            <div className=" lg:flex font-bold uppercase max-w-screen-xl mx-auto hidden items-start justify-around">
+                <Link className="px-7 py-4" href="/">
+                    meble
+                </Link>
+                <Link className="px-7 py-4 bg-amber-400" href="/">
+                    promocje
+                </Link>
+                <Link className="px-7 py-4" href="/">
+                    od ręki
+                </Link>
+                <Link className="px-7 py-4" href="/">
+                    meble
+                </Link>
+                <Link className="px-7 py-4" href="/">
+                    kontakt
+                </Link>
+            </div>
         </header>
     );
 }

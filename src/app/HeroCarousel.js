@@ -30,7 +30,7 @@ export default function HeroCarousel() {
                     draggable="false"
                     width={1600}
                     height={300}
-                    loading="lazy"
+                    loading="eager"
                     alt="Picture of the author"
                 />
             </Link>
