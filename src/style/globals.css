@@ -3,29 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    color: #5a5962
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.alice-carousel__dots{
+    margin-top: 2px !important;
+}
+.alice-carousel__dots-item{
+    width: 12px !important;
+    height: 12px !important;
+    opacity: 20%;
+    background: #585858 !important;
+}
+.alice-carousel__dots .__active{
+    opacity: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+a{
+    @apply p-2 rounded-xl
 }
 
-.btn{
-  @apply border border-black/30 px-2 py-1 rounded-lg
+a:hover{
+    @apply bg-gray-100 transition-colors duration-200
+}
+
+.btn {
+    @apply border border-black/30 px-2 py-1 rounded-lg;
 }

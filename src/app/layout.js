@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
             <head>
                 {/* <link rel="shortcut icon" href="/favicon.ico"></link> */}
             </head>
-            <body className={inter.className}>
+            <body className={`${inter.className}`}>
                 <Header />
                 {children}
             </body>
