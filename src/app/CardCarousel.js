@@ -22,15 +22,17 @@ export default function CardCarousel() {
         speed: 400,
         slidesToShow: 2,
         autoWidth: false,
-        autoHeight: false,
+        paddingLeft: 0,
+        paddingRight: 0,
+        autoHeight: true,
     };
     return (
-        <div className="w-full h-32 max-w-screen-lg mx-auto px-5 mt-6">
+        <div className="w-full h-32 max-w-screen-lg flex items-center justify-center mx-auto px-12 mt-4">
             <AliceCarousel {...settings}>
                 <Link
                     draggable="false"
                     href="/"
-                    class="relative flex items-end justify-center rounded-full hover:bg-transparent"
+                    class="rounded-full hover:bg-transparent"
                 >
                     <Image
                         className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
@@ -41,13 +43,12 @@ export default function CardCarousel() {
                         loading="lazy"
                         alt="Picture of the"
                     />
-                    <div className="-ml-6 text-sm">
-                    </div>
+                    <div className="-ml-6 text-sm"></div>
                 </Link>
                 <Link
                     draggable="false"
                     href="/"
-                    class="relative flex items-end justify-center rounded-full hover:bg-transparent"
+                    class="rounded-full hover:bg-transparent"
                 >
                     <Image
                         className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
@@ -58,13 +59,12 @@ export default function CardCarousel() {
                         loading="lazy"
                         alt="Picture of the"
                     />
-                    <div className="-ml-6 text-sm">
-                    </div>
+                    <div className="-ml-6 text-sm"></div>
                 </Link>
                 <Link
                     draggable="false"
                     href="/"
-                    class="relative flex items-end justify-center rounded-full hover:bg-transparent"
+                    class="rounded-full hover:bg-transparent"
                 >
                     <Image
                         className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
@@ -75,13 +75,12 @@ export default function CardCarousel() {
                         loading="lazy"
                         alt="Picture of the"
                     />
-                    <div className="-ml-6 text-sm">
-                    </div>
+                    <div className="-ml-6 text-sm"></div>
                 </Link>
                 <Link
                     draggable="false"
                     href="/"
-                    class="relative flex items-end justify-center rounded-full hover:bg-transparent"
+                    class="rounded-full hover:bg-transparent"
                 >
                     <Image
                         className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
@@ -92,13 +91,12 @@ export default function CardCarousel() {
                         loading="lazy"
                         alt="Picture of the"
                     />
-                    <div className="-ml-6 text-sm">
-                    </div>
+                    <div className="-ml-6 text-sm"></div>
                 </Link>
                 <Link
                     draggable="false"
                     href="/"
-                    class="relative flex items-end justify-center rounded-full hover:bg-transparent"
+                    class="rounded-full hover:bg-transparent"
                 >
                     <Image
                         className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
@@ -109,13 +107,12 @@ export default function CardCarousel() {
                         loading="lazy"
                         alt="Picture of the"
                     />
-                    <div className="-ml-6 text-sm">
-                    </div>
+                    <div className="-ml-6 text-sm"></div>
                 </Link>
                 <Link
                     draggable="false"
                     href="/"
-                    class="relative flex items-end justify-center rounded-full hover:bg-transparent"
+                    class="rounded-full hover:bg-transparent"
                 >
                     <Image
                         className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
@@ -126,8 +123,7 @@ export default function CardCarousel() {
                         loading="lazy"
                         alt="Picture of the"
                     />
-                    <div className="-ml-6 text-sm">
-                    </div>
+                    <div className="-ml-6 text-sm"></div>
                 </Link>
             </AliceCarousel>
         </div>

@@ -23,6 +23,14 @@
     opacity: 100%;
 }
 
+.flex-row {
+    overflow-x: scroll;
+}
+
+.flex-row::-webkit-scrollbar {
+    display: none;
+}
+
 a {
     @apply p-2 rounded-xl;
 }

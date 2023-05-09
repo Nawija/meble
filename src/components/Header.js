@@ -5,36 +5,34 @@ import Link from "next/link";
 export default function Header() {
     const iconColor = "#5a5962";
     const menuBtnShowClose =
-        "flex flex-col fixed right-0 top-0 h-screen w-4/5 md:w-1/2 bg-gray-200 lg:bg-transparent justify-center items-center translate-transform duration-200 lg:w-auto lg:h-auto lg:static lg:flex lg:flex-row lg:items-center lg:justify-between lg:space-x-5";
+        "flex flex-col fixed right-0 top-0 h-full w-4/5 md:w-1/2 bg-gray-200 lg:bg-transparent justify-center items-center translate-transform duration-200 lg:w-auto lg:h-auto lg:static lg:flex lg:flex-row lg:items-center lg:justify-between lg:space-x-5";
 
     const [showMenu, setMenu] = useState(false);
     const closeMenu = () => setMenu(false);
     const handleMenu = () => setMenu(!showMenu);
 
     return (
-        <header className="bg-white relative overflow-hidden text-gray-900  z-50">
-            <div className=" flex max-w-screen-2xl mx-auto items-center justify-between px-3 sm:px-10 py-4 overflow-hidden w-full z-50">
+        <header className="bg-white relative  text-gray-900  z-50">
+            <div className="relative flex max-w-screen-2xl mx-auto items-center justify-between px-3 sm:px-5 py-4  w-full z-50">
                 <Link
                     href="/"
-                    className=" hover:bg-transparent -tracking-wide md:text-lg sm:text-2xl font-bold"
+                    className=" hover:bg-transparent -tracking-wide md:text-lg sm:text-2xl lg:text-[1.6rem] font-bold"
                 >
                     DESIGNO
                 </Link>
 
-                <div className="relative w-4/5">
+                <div className="relative w-full lg:w-[40%]">
                     <input
                         type="search"
                         id="search"
                         name="search"
                         placeholder="szukaj produktu"
-                        className="w-[95%] bg-white border-b border-gray-400 rounded-xl mx-3 sm:mx-10 px-4 py-1.5 text-[14px] -tracking-wide font-medium"
+                        className="w-full bg-white border-b border-gray-400 rounded-xl mx-5 px-4 py-1.5 text-[14px] -tracking-wide font-medium"
                     />
-                    <button class="absolute right-6 top-1">
+                    <button class="absolute -right-3 top-1.5">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            
-                            width="24"
-                            height="24"
+                            className="h-5 w-5"
                             viewBox="0 0 24 24"
                             stroke-width="2"
                             stroke={iconColor}
@@ -52,40 +50,13 @@ export default function Header() {
                         </svg>
                     </button>
                 </div>
-                <Link
-                    href="tel:570037077"
-                    className="mx-5 fixed lg:static flex px-2 lg:px-5 lg:mr-5 bottom-5 right-0 text-white bg-emerald-600 lg:bg-transparent font-semibold text-[12px] md:text-sm lg:text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-full lg:rounded-3xl border-emerald-500 items-center justify-center"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 lg:w-4 lg:mr-2"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    >
-                        <path
-                            stroke="none"
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                        ></path>
-                        <path
-                            d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z"
-                            stroke-width="0"
-                            fill="currentColor"
-                        ></path>
-                    </svg>
-                    <p className="hidden lg:flex">570037077</p>
-                </Link>
                 <button
                     aria-label="Menu"
                     onClick={handleMenu}
                     className={
                         showMenu
-                            ? "fixed right-3 sm:right-10 group lg:hidden bg-gray-100 p-2.5 transition-colors duration-200 z-50 rounded-lg"
-                            : "right-6 group lg:hidden bg-gray-100 p-2.5 transition-colors duration-200 z-50 rounded-lg"
+                            ? "fixed lg:hidden bg-gray-100 p-2.5 transition-colors duration-200 z-50 rounded-lg"
+                            : " relative right-6 lg:hidden bg-gray-100 p-2.5 ml-16 transition-colors duration-200 z-50 rounded-lg"
                     }
                 >
                     <div
@@ -120,6 +91,33 @@ export default function Header() {
                             : `${menuBtnShowClose} translate-x-full lg:translate-x-0`
                     }
                 >
+                    <Link
+                        href="tel:570037077"
+                        className="mx-5 fixed lg:static flex px-2 lg:px-5 lg:mr-5 bottom-5 right-0 text-white bg-emerald-600 lg:bg-transparent font-semibold text-[12px] md:text-sm lg:text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-full lg:rounded-3xl border-emerald-500 items-center justify-center"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 lg:w-4 lg:mr-2"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                            ></path>
+                            <path
+                                d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z"
+                                stroke-width="0"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
+                        <p className="hidden lg:flex">570037077</p>
+                    </Link>
                     <Link href="/">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -190,19 +188,20 @@ export default function Header() {
                 </div>
             </div>
             <div className=" lg:flex font-bold uppercase max-w-screen-xl mx-auto hidden items-start justify-around">
-                <Link className="px-7 py-4" href="/">
+                <Link className="px-7 py-2" href="/">
                     meble
                 </Link>
-                <Link className="px-7 py-4 bg-amber-400" href="/">
-                    promocje
+                <Link className="px-7 py-2 bg-amber-400 relative" href="/">
+                    <p>promocje</p>
+                    <div className="bg-black text-white text-[10px] absolute left-1/2 -translate-x-1/2 -bottom-2 overflow-visible">NOWOŚCI</div>
                 </Link>
-                <Link className="px-7 py-4" href="/">
+                <Link className="px-7 py-2" href="/">
                     od ręki
                 </Link>
-                <Link className="px-7 py-4" href="/">
+                <Link className="px-7 py-2" href="/">
                     meble
                 </Link>
-                <Link className="px-7 py-4" href="/">
+                <Link className="px-7 py-2" href="/">
                     kontakt
                 </Link>
             </div>
