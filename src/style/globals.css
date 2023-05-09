@@ -3,28 +3,32 @@
 @tailwind utilities;
 
 :root {
-    color: #5a5962
+    color: #5a5962;
 }
 
-.alice-carousel__dots{
-    margin-top: 2px !important;
+.alice-carousel__dots {
+    margin-top: -12px !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.alice-carousel__dots-item{
-    width: 12px !important;
-    height: 12px !important;
+.alice-carousel__dots-item {
+    width: 15px !important;
+    height: 15px !important;
     opacity: 20%;
     background: #585858 !important;
+    color: #1b1b1b;
 }
-.alice-carousel__dots .__active{
+.alice-carousel__dots .__active {
     opacity: 100%;
 }
 
-a{
-    @apply p-2 rounded-xl
+a {
+    @apply p-2 rounded-xl;
 }
 
-a:hover{
-    @apply bg-gray-100 transition-colors duration-200
+a:hover {
+    @apply bg-gray-100 transition-colors duration-200;
 }
 
 .btn {

@@ -13,8 +13,8 @@ export default function Header() {
     const handleMenu = () => setMenu(!showMenu);
 
     return (
-        <header className="sticky top-0 bg-white text-gray-900 z-50">
-            <div className=" flex items-center justify-between px-3 sm:px-10 py-4 w-full overflow-hidden">
+        <header className="bg-white text-gray-900 overflow-hidden z-50">
+            <div className=" flex max-w-screen-2xl mx-auto items-center justify-between px-3 sm:px-10 py-4 w-full z-50">
                 <Link
                     href="/"
                     className=" hover:bg-transparent tracking-wide text-xl sm:text-2xl font-bold"
@@ -26,8 +26,35 @@ export default function Header() {
                     id="search"
                     name="search"
                     placeholder="szukaj produktu"
-                    className="w-full bg-white border border-gray-400 rounded-xl mx-3 sm:mx-10 px-4 py-1.5 text-[14px] -tracking-wide font-medium"
+                    className="w-full bg-white border-b border-gray-400 rounded-xl mx-3 sm:mx-10 px-4 py-1.5 text-[14px] -tracking-wide font-medium"
                 />
+                <Link
+                    href="570037077"
+                    className="mx-5 px-5 mr-5 font-semibold text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-3xl border-emerald-500 flex items-center justify-center"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-4 mr-2"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        ></path>
+                        <path
+                            d="M9 3a1 1 0 0 1 .877 .519l.051 .11l2 5a1 1 0 0 1 -.313 1.16l-.1 .068l-1.674 1.004l.063 .103a10 10 0 0 0 3.132 3.132l.102 .062l1.005 -1.672a1 1 0 0 1 1.113 -.453l.115 .039l5 2a1 1 0 0 1 .622 .807l.007 .121v4c0 1.657 -1.343 3 -3.06 2.998c-8.579 -.521 -15.418 -7.36 -15.94 -15.998a3 3 0 0 1 2.824 -2.995l.176 -.005h4z"
+                            stroke-width="0"
+                            fill="currentColor"
+                        ></path>
+                    </svg>
+                    <p>570037077</p>
+                </Link>
                 <button
                     aria-label="Menu"
                     onClick={handleMenu}
@@ -134,6 +161,13 @@ export default function Header() {
                     </Link>
                 </div>
             </div>
+                    <div className=" lg:flex font-bold uppercase max-w-screen-xl mx-auto hidden items-start justify-around">
+                        <Link className="px-7 py-4" href="/">meble</Link>
+                        <Link className="px-7 py-4 bg-amber-400" href="/">promocje</Link>
+                        <Link className="px-7 py-4" href="/">od ręki</Link>
+                        <Link className="px-7 py-4" href="/">meble</Link>
+                        <Link className="px-7 py-4" href="/">kontakt</Link>
+                    </div>
         </header>
     );
 }
