@@ -17,7 +17,7 @@ export default function Header() {
             <div className=" flex max-w-screen-2xl mx-auto items-center justify-between px-3 sm:px-10 py-4 w-full z-50">
                 <Link
                     href="/"
-                    className=" hover:bg-transparent tracking-wide text-xl sm:text-2xl font-bold"
+                    className=" hover:bg-transparent tracking-wide text-lg sm:text-2xl font-bold"
                 >
                     DESIGNO
                 </Link>
@@ -30,7 +30,7 @@ export default function Header() {
                 />
                 <Link
                     href="570037077"
-                    className="mx-5 px-5 mr-5 font-semibold text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-3xl border-emerald-500 flex items-center justify-center"
+                    className="mx-5 px-5 mr-5 font-semibold text-[12px] text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-3xl border-emerald-500 flex items-center justify-center"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
