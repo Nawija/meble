@@ -5,7 +5,7 @@ import Header from "../components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Meble",
+    title: "Sklep Meblowy Internetowy - Warszawa. Nowoczesne Meble Online - Mebloo.pl",
     description: "Sklep Internetowy",
 };
 

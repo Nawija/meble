@@ -25,7 +25,7 @@ export default function CardCarousel() {
         autoHeight: false,
     };
     return (
-        <div className="w-full h-32 max-w-screen-xl mx-auto px-5 mt-6">
+        <div className="w-full h-32 max-w-screen-lg mx-auto px-5 mt-6">
             <AliceCarousel {...settings}>
                 <Link
                     draggable="false"
@@ -33,7 +33,7 @@ export default function CardCarousel() {
                     class="relative flex items-end justify-center rounded-full hover:bg-transparent"
                 >
                     <Image
-                        className="h-12 w-12 md:h-24 md:w-24 rounded-full"
+                        className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
                         src="/n1.jpg"
                         draggable="false"
                         width={100}
@@ -50,7 +50,7 @@ export default function CardCarousel() {
                     class="relative flex items-end justify-center rounded-full hover:bg-transparent"
                 >
                     <Image
-                        className="h-12 w-12 md:h-24 md:w-24 rounded-full"
+                        className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
                         src="/fotel.png"
                         draggable="false"
                         width={200}
@@ -67,7 +67,7 @@ export default function CardCarousel() {
                     class="relative flex items-end justify-center rounded-full hover:bg-transparent"
                 >
                     <Image
-                        className="h-12 w-12 md:h-24 md:w-24 rounded-full"
+                        className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
                         src="/fotel.png"
                         draggable="false"
                         width={200}
@@ -84,7 +84,7 @@ export default function CardCarousel() {
                     class="relative flex items-end justify-center rounded-full hover:bg-transparent"
                 >
                     <Image
-                        className="h-12 w-12 md:h-24 md:w-24 rounded-full"
+                        className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
                         src="/fotel.png"
                         draggable="false"
                         width={200}
@@ -101,7 +101,7 @@ export default function CardCarousel() {
                     class="relative flex items-end justify-center rounded-full hover:bg-transparent"
                 >
                     <Image
-                        className="h-12 w-12 md:h-24 md:w-24 rounded-full"
+                        className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
                         src="/fotel.png"
                         draggable="false"
                         width={200}
@@ -118,7 +118,7 @@ export default function CardCarousel() {
                     class="relative flex items-end justify-center rounded-full hover:bg-transparent"
                 >
                     <Image
-                        className="h-12 w-12 md:h-24 md:w-24 rounded-full"
+                        className="h-12 w-12 md:h-24 md:w-24 rounded-full shadow-lg border-2 border-white"
                         src="/fotel.png"
                         draggable="false"
                         width={200}
