@@ -22,13 +22,13 @@ export default function HeroCarousel() {
             <Link
                 draggable="false"
                 href="/"
-                class="group relative flex px-12 items-center justify-center overflow-hidden h-96 bg-gray-100"
+                class="group relative flex px-12 items-center justify-center overflow-hidden bg-gray-100"
             >
                 <Image
                     className="rounded-xl"
                     src="/1.jpg"
                     draggable="false"
-                    width={1200}
+                    width={1600}
                     height={300}
                     loading="lazy"
                     alt="Picture of the author"
@@ -37,13 +37,13 @@ export default function HeroCarousel() {
             <Link
                 draggable="false"
                 href="/"
-                class="group relative flex px-12 items-center justify-center overflow-hidden h-96 bg-gray-100"
+                class="group relative flex px-12 items-center justify-center overflow-hidden bg-gray-100"
             >
                 <Image
                     className="rounded-xl"
                     src="/2.jpg"
                     draggable="false"
-                    width={1200}
+                    width={1600}
                     height={300}
                     loading="lazy"
                     alt="Picture of the"
