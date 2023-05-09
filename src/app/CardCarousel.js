@@ -11,7 +11,7 @@ export default function CardCarousel() {
         responsive: {
             0: { items: 1 },
             568: { items: 2 },
-            1024: { items: 4 },
+            1024: { items: 5 },
         },
         swipeDelta: 4,
         dots: false,
@@ -33,7 +33,7 @@ export default function CardCarousel() {
             >
                 <Image
                     className="h-40 w-40 rounded-full"
-                    src="/2.jpg"
+                    src="/naroznik.png"
                     draggable="false"
                     width={400}
                     height={400}
@@ -48,13 +48,32 @@ export default function CardCarousel() {
             >
                 <Image
                     className="h-40 w-40 rounded-full"
-                    src="/1.jpg"
+                    src="/naroznik.png"
                     draggable="false"
                     width={400}
                     height={400}
                     loading="lazy"
                     alt="Picture of the"
                 />
+            </Link>
+            <Link
+                draggable="false"
+                href="/"
+                class="relative flex items-center justify-center rounded-full hover:bg-transparent"
+            >
+                <Image
+                    className="h-40 w-40 rounded-full"
+                    src="/fotel.png"
+                    draggable="false"
+                    width={400}
+                    height={400}
+                    loading="lazy"
+                    alt="Picture of the"
+                />
+                <div className="-ml-6">
+                <p className="font-semibold">Fotele</p>
+                <p>Zobacz Więcej</p>
+                </div>
             </Link>
             <Link
                 draggable="false"
