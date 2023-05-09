@@ -16,24 +16,49 @@ export default function Header() {
             <div className=" flex max-w-screen-2xl mx-auto items-center justify-between px-3 sm:px-10 py-4 overflow-hidden w-full z-50">
                 <Link
                     href="/"
-                    className=" hover:bg-transparent tracking-wide text-lg sm:text-2xl font-bold"
+                    className=" hover:bg-transparent -tracking-wide md:text-lg sm:text-2xl font-bold"
                 >
                     DESIGNO
                 </Link>
-                <input
-                    type="search"
-                    id="search"
-                    name="search"
-                    placeholder="szukaj produktu"
-                    className="w-full bg-white border-b border-gray-400 rounded-xl mx-3 sm:mx-10 px-4 py-1.5 text-[14px] -tracking-wide font-medium"
-                />
+
+                <div className="relative w-4/5">
+                    <input
+                        type="search"
+                        id="search"
+                        name="search"
+                        placeholder="szukaj produktu"
+                        className="w-[95%] bg-white border-b border-gray-400 rounded-xl mx-3 sm:mx-10 px-4 py-1.5 text-[14px] -tracking-wide font-medium"
+                    />
+                    <button class="absolute right-6 top-1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke={iconColor}
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                            ></path>
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                            <path d="M21 21l-6 -6"></path>
+                        </svg>
+                    </button>
+                </div>
                 <Link
-                    href="570037077"
-                    className="mx-5 px-5 mr-5 font-semibold text-[12px] md:text-sm text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-3xl border-emerald-500 flex items-center justify-center"
+                    href="tel:570037077"
+                    className="mx-5 fixed lg:static flex px-2 lg:px-5 lg:mr-5 bottom-5 right-0 text-white bg-emerald-600 lg:bg-transparent font-semibold text-[12px] md:text-sm lg:text-black md:hover:text-gray-100 md:hover:bg-emerald-600 border-2 rounded-full lg:rounded-3xl border-emerald-500 items-center justify-center"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-4 mr-2"
+                        class="h-5 w-5 lg:w-4 lg:mr-2"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
@@ -52,7 +77,7 @@ export default function Header() {
                             fill="currentColor"
                         ></path>
                     </svg>
-                    <p>570037077</p>
+                    <p className="hidden lg:flex">570037077</p>
                 </Link>
                 <button
                     aria-label="Menu"
